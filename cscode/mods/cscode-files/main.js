@@ -439,9 +439,10 @@ export default class Files extends View {
         .child(div().size(6).flex_none().rounded(3).bg(t[a.status] ?? t.idle))
         .child(div().min_w(0).truncate().child(agentName(a)));
     };
-    return v_flex().flex_none().max_h(220).px(6).pt(6).pb(5).gap(1).border_b(1).border_color(t.border)
+    // The rows go straight under the heading: an inner scroll list collapsed to no height.
+    return v_flex().flex_none().px(6).pt(6).pb(5).gap(1).border_b(1).border_color(t.border)
       .child(div().px(8).pb(2).text_size(10.5).text_color(t.dim).child("Worktrees"))
-      .child(v_flex().id("wt-list").min_h(0).overflow_y_scrollbar().gap(1).children(this.worktrees.map(w => {
+      .children(this.worktrees.map(w => {
         const on = w.path === shown, chips = (w.agents ?? []).map(chip).filter(Boolean);
         return v_flex().id(`wt-${w.path}`).px(8).py(4).gap(3).rounded(7).cursor_pointer()
           .when(on, el => el.bg(t.selected)).hover(s => s.bg(on ? t.selected : t.hover))
@@ -457,7 +458,7 @@ export default class Files extends View {
             .child(div().flex_none().max_w(160).truncate().text_size(11).text_color(t.dim).child(w.branch || "no branch"))
             .children(chips)
             .when(!chips.length, el => el.child(div().text_size(10.5).text_color(t.dim).child("· no agent"))));
-      })));
+      }));
   }
 
   render(cx) {
