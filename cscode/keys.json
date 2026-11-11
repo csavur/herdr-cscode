@@ -1,0 +1,7 @@
+{
+  "mod:cscode-viewer": {
+    "cmd-s": "cscode-viewer.save",
+    "cmd-shift-v": "cscode-viewer.preview",
+    "ctrl-w": "cscode-viewer.close"
+  }
+}
