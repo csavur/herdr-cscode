@@ -68,7 +68,8 @@ export default class Pane extends View {
         cx.stop_propagation();
         cx.spawn(async () => openInVSCode(machine, p.cwd));
       })
-      .child(svg("mods/cscode-pane/code.svg").size(14));
+      // VS Code's own logo, in its colour (Material Icon Theme's, MIT: LICENSE-material-icon-theme.txt).
+      .child(image("mods/cscode-pane/vscode-logo.svg").size(14));
   }
 
   render(cx) {

@@ -66,7 +66,7 @@ cscode is Apache-2.0 ([LICENSE](LICENSE)). It builds on:
 |---|---|---|
 | `cscode-spaces`, `-agents`, `-tabs`, `-pane`, `-files` | Herdr's own mods, [herdrdev/herdr-app](https://github.com/herdrdev/herdr-app) | Apache-2.0 |
 | `cscode-files`, `cscode-viewer`, `cscode-file-menu` | [mchlkim/herdr-file-explorer](https://github.com/mchlkim/herdr-file-explorer) | MIT |
-| File icons (`cscode-files/icons`, `icons.js`, `lookup.js`) | [LaiqianDS/herdr-mods](https://github.com/LaiqianDS/herdr-mods) `file-icons`, icons from [Material Icon Theme](https://github.com/material-extensions/vscode-material-icon-theme) | Apache-2.0, MIT |
+| File icons (`cscode-files/icons`, `icons.js`, `lookup.js`), the VS Code logo (`cscode-agents`, `cscode-pane`) | [LaiqianDS/herdr-mods](https://github.com/LaiqianDS/herdr-mods) `file-icons`, icons from [Material Icon Theme](https://github.com/material-extensions/vscode-material-icon-theme) | Apache-2.0, MIT |
 | `cscode-todo` | [herunan/herdr-over9k](https://github.com/herunan/herdr-over9k) | MIT |
 
 Each mod folder carries the licence texts of what it came from. All of them were

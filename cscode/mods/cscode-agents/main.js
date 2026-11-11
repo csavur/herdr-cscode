@@ -449,7 +449,8 @@ export default class Agents extends View {
           cx.stop_propagation();
           cx.spawn(async () => openInVSCode(machine, folder));
         })
-        .child(svg("mods/cscode-agents/code.svg").size(13)) : null;
+        // VS Code's own logo, in its colour (Material Icon Theme's, MIT: LICENSE-material-icon-theme.txt).
+        .child(image("mods/cscode-agents/vscode-logo.svg").size(13)) : null;
       // Line 2: the space as a pill in its own color, then branch and machine.
       const session = sessionName(a, label(a));
       // A branch means the agent's folder is in a git repo: a git mark follows the pill.

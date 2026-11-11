@@ -28,7 +28,9 @@ Left to right. Colours are theme names; the layout sets no theme of its own.
   - **Body**, padding 8, gap 8: the active tab's panes, each a card on
     `background` with a 1px `border` (focused: `accent`), radius 10, gap 8,
     framed even when alone, with a 30px header on top (`cscode-pane`: program
-    icon, agent name or title, folder, status, split / zoom / close buttons).
+    icon, agent name or title, folder, status, split / zoom / close buttons, and
+    on hover an Open in VS Code button drawn with VS Code's logo, as on each
+    agent row; Remote-SSH for another machine).
   - **Right panel**, 368px (280 to 900), hidden until a panel button opens it:
     a stack of **Files** (`cscode-files`), **Changes** (Herdr's `changes`) and
     **To-do** (`cscode-todo`), each a card on `background`, radius 10.
